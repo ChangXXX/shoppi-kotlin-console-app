@@ -18,8 +18,8 @@ class ShoppingCategory: Screen() {
             shoppingCart.showCartItems()
         } else {
             if(categories.contains((selectedCategory))){
-                val shoppingProduct = ShoppingProductList()
-                shoppingProduct.showProducts(selectedCategory)
+                val shoppingProduct = ShoppingProductList(selectedCategory)
+                shoppingProduct.showProducts()
             } else{
                 showErrorMessage(selectedCategory)
             }
